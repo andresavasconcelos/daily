@@ -1,0 +1,181 @@
+@import 'variables';
+.sidebar-mini{
+  margin-top: 56px;
+  .main-header{
+    background-color: #ddd!important;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    .btnUsuario{
+      background-color: transparent;
+      border: none;
+      color: rgba(0,0,0,.5);
+      box-shadow: none;
+    }
+  }
+  .main-sidebar{
+    .brand-link{
+      background-color: #561212;
+      border-bottom: none;
+      img{
+        box-shadow: none;
+      }
+    }
+    .sidebar{
+      background-color: #ddd;
+      ul{
+        li{
+          a{
+            i{
+              color: $black;
+            }
+            p{
+              color: $black;
+            }
+          }
+        }
+      }
+      .user-panel{
+        a{
+          color: $black;
+        }
+      }
+      .has-treeview{
+        &:first-child{
+          a{
+            i{
+              font-size: 24px;
+            }
+          }
+        }
+        a{
+          i{
+            color: $black;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.card{
+  .card-header{
+    background-color: lighten(#561212, 0.5%);
+    color: $white;
+  }
+  .card-body{
+    label{
+      color: $orange;
+    }
+    
+    h3{
+      color: #000;
+    }
+
+    table{
+      thead{
+        tr{
+          th{
+            color: #561212;
+          }
+        }
+      }
+      tbody{
+        tr{
+          td{
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+
+//*****************LOGIN********************
+.login-page{
+  background-image: url('../admin/img/fundoempreenda.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .login-box{
+    .card{
+      background-color: rgba(255,255,255,0.3);
+      -webkit-box-shadow: 0px 0px 28px -2px rgba(0,0,0,0.61);
+      -moz-box-shadow: 0px 0px 28px -2px rgba(0,0,0,0.61);
+      box-shadow: 0px 0px 28px -2px rgba(0,0,0,0.61);
+      .btnLogin{
+        background-color: $black;
+        color: $white;
+        font-weight: 700;
+        border: none;
+      }
+      .btn-link{
+        color: $black;
+      }
+    }
+  }
+}
+
+//MODAL
+.detalhesAssinantes{
+  z-index: 9999;
+  .form-group{
+    margin-bottom: 6px;
+    label{
+      margin-bottom: 2px;
+    }
+  }
+}
+
+
+//ADICIONAR MATÉRIA
+.pgAdicionar{
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.38)!important;
+  -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.38)!important;
+  box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.38)!important;
+  padding: 40px!important;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  .card-header{
+    border-bottom: 2px solid #561212;
+    margin-bottom: 30px;
+    h3{
+      font-weight: 600;
+      color: #561212;
+      text-align: center;
+      font-size: 29px;
+    }
+  }
+  button[type="submit"]{
+    background-color: #561212;
+    color: $white;
+  }
+  .divImgPreview{
+    position: relative;
+    width: 100%;
+    height: 270px;
+
+    //-webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.38);
+    //-moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.38);
+    //box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.38);
+    img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      max-height: 100%;
+    }
+  }
+}
+
+
+//IMAGEM UPLOAD
+.imgUpload{
+  height: 70px;
+}
+
+.textAlerta{
+  color: $orange;
+}
