@@ -59,7 +59,7 @@
 }
 
 .card .card-body label {
-  color: #f6993f;
+  color: #7b1517;
 }
 
 .card .card-body h3 {
@@ -75,9 +75,10 @@
 }
 
 .login-page {
-  background-image: url("../admin/img/fundoempreenda.png");
+  background-image: url("../admin/img/fundotmontec.png");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 .login-page .login-box .card {
@@ -155,4 +156,14 @@
 
 .textAlerta {
   color: #f6993f;
+}
+
+.brand-image {
+  width: 92%;
+}
+
+.btn-warning {
+  background-color: #581212 !important;
+  color: #fff !important;
+  border-color: #000;
 }

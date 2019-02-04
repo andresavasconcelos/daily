@@ -70,7 +70,7 @@
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-        <strong>Copyright &copy; 2018 | Desenvolvido por <a href="http://tmontec.com.br" target="_blank">Tmontec</a>.</strong>
+        <strong>Copyright &copy; 2019 | Desenvolvido por <a href="http://tmontec.com.br" target="_blank">Tmontec</a>.</strong>
         Todos os direitos reservados.
         <div class="float-right d-none d-sm-inline-block">
             <b>Versão</b> 1.0
@@ -131,15 +131,6 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('admin/js/demo.js') }}"></script>
 
-<script>
-    $(document).ready(function() {
-        //***MASK
-        $('.tel').mask('(00) 0000-0000');
-        $('.cel').mask('(00) 0 0000-0000');
-        $('.cpf').mask('000.000.000-00');
-        $('.cep').mask('00000-000');
-    });
-</script>
 @yield('scripts')
 </body>
 </html>

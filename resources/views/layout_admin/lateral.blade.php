@@ -4,22 +4,13 @@
         <!-- Brand Logo -->
         <a href="{{ url('/admin/painel') }}" class="brand-link">
             <img src="{{ asset('images/logo_tmontec.png') }}"
-                 alt="Logo Empreenda"
+                 alt="Logo Tmontec"
                  class="brand-image elevation-3 float-none"
                  style="opacity: .8">
         </a>
 
         <!-- Sidebar -->
         <div class="sidebar">
-            <!-- Sidebar user (optional) -->
-            {{--<div class="user-panel mt-3 pb-3 mb-3 d-flex">--}}
-                {{--<div class="image">--}}
-                    {{--<img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">--}}
-                {{--</div>--}}
-                {{--<div class="info">--}}
-                    {{--<a href="#" class="d-block">{{ Auth::user()->name }}</a>--}}
-                {{--</div>--}}
-            {{--</div>--}}
 
             <!-- Sidebar Menu -->
             <nav class="mt-2">
@@ -108,7 +99,5 @@
                     </li>
                 </ul>
             </nav>
-            <!-- /.sidebar-menu -->
         </div>
-        <!-- /.sidebar -->
     </aside>

@@ -107,7 +107,6 @@
                                             <input type="text" id="funcionario" placeholder="Titulo" name="funcionario" value="{{ Request("funcionario") }}" class="form-control">
                                         </div>
                                     </div>
-
                                     <div class="col-12 col-lg-12 text-right">
                                         <button type="submit" class="btn btn-primary">Filtrar</button>
                                     </div>
@@ -128,20 +127,18 @@
                             <tr>
                                 <th>Data</th>
                                 <th>Funcionário</th>
-                                <th>Projeto</th>
                                 <th>Tarefa</th>
+                                <th>Projeto</th>
                                 <th>Ação</th>
                             </tr>
                             </thead>
-
                             <tbody>
                                 @foreach($dailies as $daily)
                                     <tr>
                                         <td>{{ $daily->data }}</td>
                                         <td>{{ $daily->id_funcionario}}</td>
+                                        <td>{{ $daily->tarefa }}</td>
                                         <td>{{ $daily->projetos}}</td>
-                                        <td>{{ $daily->tarefa}}</td>
-                                            {{--<button class="btn btn-info btn-sm" data-toggle="modal" data-target="#detalhesAssinantes{{ $materia->id }}"><i class="fa fa-eye"></i> Detalhes</button>--}}
                                         <td>
                                             <a href="{{ url('/admin/daily/editar/'.$daily->id) }}" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i> Editar</a>
                                         </td>
